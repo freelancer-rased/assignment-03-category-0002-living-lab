@@ -9,6 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awersome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font: sora  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
     <!-- custom tailwind section  -->
     <script>
         tailwind.config = {
@@ -16,14 +24,82 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-btn': '#179800',
+                'primary-green': '#179800',
               }
             }
           }
         }
       </script>
+
+      <!-- custom css section  -->
+       <style>
+        .font-sora{
+            font-family: "Sora", serif;
+
+        }
+       </style>
 </head>
-<body>
-    <header>
+<body class="font-sora">
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <!-- navbar section  -->
+         <section class="container mx-auto pt-5">
+            <div>
+                <div class="navbar">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Product</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                      </div>
+                      <a> <img class="w-36" src="./assets/logo-header.png" alt=""> </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a>Product</a></li>
+                          <li><a>Services</a></li>
+                          <li><a>Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end space-x-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <button class="btn btn-outline border-[#179800] px-6 text-black">Success</button>
+                      <a class="btn bg-primary-btn px-6 text-white">Register</a>
+                    </div>
+                  </div>
+             </div>
+         </section>
+
+         <!-- banner section  -->
+          <section class="container mx-auto text-center px-4 ">
+           <div class="lg:w-[800px] mx-auto pt-24">
+            <h1 class="text-3xl lg:text-5xl font-semibold">Freshness <span class="text-primary-green">You Can <br>Count</span> On, Prices You'll Love! </h1>
+            <p class="text-xl py-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+           </div>
+           <div class="flex justify-center">
+            <img class="h[400px] lg:h-[730px]" src="./assets/hero-vegetables.png" alt="">
+           </div>
+          </section>
+
 
     </header>
     <main>
